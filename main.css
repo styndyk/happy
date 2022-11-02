@@ -11,12 +11,13 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-	background: #E5E5E5;
+	background: #FFFFFF;
 	color: #222222;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, span {
 	overflow: hidden;
+	font-weight: 400;
 }
 
 ul {
@@ -30,6 +31,13 @@ a {
 
 input:focus {
 	outline: none;
+}
+button {
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 .button {
@@ -46,14 +54,15 @@ input:focus {
 	margin: 0 auto;
 }
 
+
 /* END General Styles*/
 
 /* Header Styles*/
 
 .header {
-	background: #FFFFFF;
 	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
 	padding: 25px 0;
+	margin-bottom: 100px;
 }
 
 .header__inner {
@@ -120,3 +129,45 @@ input:focus {
 }
 
 /* END Header Styles*/
+
+/* Introduction Styles*/
+
+.introduction {
+	max-height: 540px;
+	overflow-y: clip;
+}
+
+.introduction .container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.introduction__inner {
+	display: flex;
+	justify-content: space-around;
+}
+
+.introduction__item {
+	max-width: 420px;
+}
+
+.introduction__item__logo {
+	margin-bottom: 10px;
+}
+
+.introduction__item__title {
+	font-size: 54px;
+	line-height: 68px;
+	margin-bottom: 20px;
+}
+
+.introduction__item__text {
+	margin-bottom: 20px;
+}
+
+.introduction__item__button {
+	padding: 10px 25px;
+	background-color: #222222;
+	border-radius: 4px;
+}
+/* END Introduction Styles*/
